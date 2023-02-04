@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Numeros</title>
+    
+    <style>
+        body {
+            background-color: orangered;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+            text-shadow: 3px 3px brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um numero: ')) 
+        var n2 = Number(window.prompt('Digite um numero: ')) 
+
+
+        var soma = n1+n2
+        /*
+        String para numero:
+
+        * Number.parseInt(n1), transforma em inteiros
+        * Number.parseFloat(n2), transforma em reais
+        * Number(n), o javascript que decide se é inteiro ou real
+        
+        x--------------------------------------------------------------------------------x
+        | Formatando numeros                                                             |
+        |                                                                                |
+        | var N1 = 1543.5                                                                |
+        |                                                                                |
+        | * N1.toFixed(2) = mostra mais numeros dps da virgula(ponto)                    |
+        | * N1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL (USD, EUR)'})  |
+        | mostra o numero em Reais                                                       |
+        | * s.toLowerCase = Deixa em minusculas                                          |
+        x--------------------------------------------------------------------------------x
+        
+        Numero para String:
+
+        * String(n1)
+        * n1.toString()
+        x----------------------------------------------x
+        | Formatando strings                           |
+        |                                              |
+        | var s = 'Javascrpit'                         |
+        |                                              |
+        | * s.lenght = ler o tamanho das strings       |
+        | * s.toUpperCase= Deixa em maiusculas         |
+        | * s.toLowerCase = Deixa em minusculas        |
+        x----------------------------------------------x
+        
+
+        > 'O aluno ' +nome+ ' de ' +idade + ' anos de idade,tirou: ' + nota
+        'O aluno Mateus de 15 anos de idade,tirou: 9.5'
+        > `O aluno ${nome} de ${idade} anos tirou a nota: ${nota}` =  TemplateString
+        'O aluno Mateus de 15 anos tirou a nota: 9.5'
+
+
+        formas de printar variaveis numa frase, era bem melhor se fosse em python
+        */
+        window.alert (`A soma entre ${n1} e ${n2} é igual a ${soma}`) //concatenação
+        // number + numeber > adição ou string + string > concatenação
+    </script>
+</body>
+</html>
