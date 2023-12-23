@@ -1,0 +1,1 @@
+console.log("script no fim da página");
